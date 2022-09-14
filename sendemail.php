@@ -14,9 +14,9 @@ require 'vendor/autoload.php';
 // https://github.com/sendgrid/sendgrid-php/releases
 
 $email = new \SendGrid\Mail\Mail(); 
-$email->setFrom("delfoswebagency@gmail.com", "delfos agency");
+$email->setFrom("Sender Email-id in SendGrid", "Sender Name in SendGrid");
 $email->setSubject("Sending with SendGrid is Fun");
-$email->addTo("$emailto", "Pawan");
+$email->addTo("$emailto", "Recipient");
 $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
