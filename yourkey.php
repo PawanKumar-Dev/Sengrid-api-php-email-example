@@ -1,0 +1,2 @@
+<?php
+define("APIKEY", "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");
